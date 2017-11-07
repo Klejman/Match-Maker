@@ -74,7 +74,7 @@
         <option value="5">Strongly Agree</option>
     </select>
 
-    <h3><b>Question ?</b></h3>
+    <h3><b>Question:</b></h3>
     <h4 class="question-text">You are great at impersonations</h4>
     <select data-placeholder="7 More" class="chosen-select-deselect" id="q4">
         <option value=""></option>
@@ -96,7 +96,7 @@
         <option value="5">Strongly Agree</option>
     </select>
 
-    <h3><b>Question ?</b></h3>
+    <h3><b>Question:</b></h3>
     <h4 class="question-text">You love all things 80's</h4>
     <select data-placeholder="Keep Truckin'" class="chosen-select-deselect" id="q6">
         <option value=""></option>
@@ -129,7 +129,7 @@
         <option value="5">Strongly Agree</option>
     </select>
 
-    <h3><b>Question ?</b></h3>
+    <h3><b>Question:</b></h3>
     <h4 class="question-text">You have a one track mind</h4>
     <select data-placeholder="Almost There" class="chosen-select-deselect" id="q9">
         <option value=""></option>
@@ -177,7 +177,7 @@
     </div>
 </div>
 <script type="text/javascript">
-    // picked up from documentation for Chosen
+  // picked up from documentation for Chosen
   var config = {
     '.chosen-select': {},
     '.chosen-select-deselect': {
@@ -193,7 +193,14 @@
       width: "95%"
     }
   };
-
+  $(function(){
+    $("#chosen").chosen();
+    $.validator.setDefaults({ ignore: ":hidden:not(select)" });
+    $("#signupForm").validate({
+      rules: {chosen:"required"},
+      message: {chosen:"Select a Country"}
+    });
+  });
   for (var selector in config) {
     $(selector).chosen(config[selector]);
   }
@@ -201,7 +208,6 @@
   $("#submit").on("click", function() {
     function validateForm() {
       var isValid = true;
-//      swal("Double Check Time", "For the most accurate results all questionnaire questions must be answered", "Error" );
       $('.form-control').each(function() {
         if ($(this).val() === '')
           isValid = false;
