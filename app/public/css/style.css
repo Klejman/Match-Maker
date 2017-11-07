@@ -1,0 +1,56 @@
+body {
+    background-color: #7388b2;
+}
+
+h1.lead-title{
+    color: #d34753;
+    font-family: 'Bangers', cursive;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+.btn{
+    background-color: #d34753;
+}
+
+
+h3,
+h4,
+h6 {
+    color: #dbe9dc;
+    font-family: 'Bangers', cursive;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h4.question-text {
+    font-size: 24px;
+    color: #d34753;
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.jumbotron{
+    background-color: #83ade8;
+}
+
+hr {
+    margin: 1.2em 0;
+}
+
+resultsModal img {
+    overflow: hidden;
+    max-width: 550px;
+}
