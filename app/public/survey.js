@@ -1,4 +1,5 @@
-/ Chosen CSS
+// Chosen CSS
+// picked up from documentation for Chosen
 var config = {
   '.chosen-select': {},
   '.chosen-select-deselect': {
@@ -8,12 +9,13 @@ var config = {
     disable_search_threshold: 10
   },
   '.chosen-select-no-results': {
-    no_results_text: 'Oops, nothing found!'
+    no_results_text: 'No results returned!'
   },
   '.chosen-select-width': {
     width: "95%"
   }
-}
+};
+
 for (var config {
   $('.chosen-select').chosen(config['.chosen-select']);
 });

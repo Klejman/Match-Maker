@@ -14,14 +14,18 @@ module.exports = function(app){
     var perfectFit = {
       name: "",
       photo: "",
-      // 10 questions 10 friends = 10 * 10 =1,000
+      // Logic 10 questions, 10 friends = 10 * 10 = 1,000
       finalPiece: 1000
     };
 
     var userInput = req.body;
+    console.log(userInput);
     var userName = userInput.name;
+    console.log(userName);
     var userPhoto = userInput.photo;
+    console.log(userPhoto);
     var userScores = userInput.scores;
+    console.log(userScores);
 
     var totalDifference = 0;
 
