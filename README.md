@@ -23,6 +23,10 @@
 7. Once the patent pending algorithm has had a chance to run the current user's most compatible match up friend, will be displayed in a modal pop-up.
    * The modal displays both the name and picture of the perfect fit or friend match.
 
+# <h4> Heroku App
+Check out my App on Heroku
+* https://find-friends-km.herokuapp.com/
+
 # <h4>Resources
 The formidable form element was tamed with the select enhancer `Chosen`
 * David Walsh had a great article that was exremely helpful when creating this app https://davidwalsh.name/jquery-chosen
