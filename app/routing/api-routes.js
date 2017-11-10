@@ -14,7 +14,7 @@ module.exports = function(app){
     var perfectFit = {
       name: "",
       photo: "",
-      // Logic 10 questions, 10 friends = 10 * 10 = 1,000
+      // Logic 10 questions, 10 friends = 10 * 10
       finalPiece: 1000
     };
 

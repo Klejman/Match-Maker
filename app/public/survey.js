@@ -54,7 +54,7 @@ $("#submit").on("click", function() {
       $("#resultsModal").modal('toggle');
     })
   } else {
-    swal("Oops", "You must have missed filling out one of the questions", "error");
+      swal("Oops", "Please be sure to fill out all the required items before submitting your questionnaire. Thank you", "error");
   }
   return false;
 });
