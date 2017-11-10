@@ -5,7 +5,7 @@ var path = require('path');
 
 //creates express server and sets up a port
 var app = express();
-var port = 3000;
+var port = process.env.PORT || 3000;
 // app.set('port', process.env.PORT || 3000);
 
 // Sets up middleware for compatibility algorithm
