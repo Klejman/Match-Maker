@@ -13,7 +13,7 @@ var friends = [
   {
     "name":"Ethan Hunt",
     "photo":"https://cdn.empireonline.com/jpg/50/0/0/500/380/aspectfit/0/0/0/0/0/0/c/features/560ebb1950e6c513721c2df5/tom-cruise-ethan-hunt.jpg",
-    "scores":[5,5,2,5,5,1,3,3,1,1]
+    "scores":["5","5","2","5","5","1","3","3","1","1"]
   },
   {
     "name":"Samwise Gamgee",

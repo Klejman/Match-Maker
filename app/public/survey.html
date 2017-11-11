@@ -167,8 +167,7 @@
             </div>
             <div class="modal-body">
                 <h2 id="matchName"></h2>
-                <!--src found on stack overflow-->
-                <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                <img id="theRevealImg"/>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -199,34 +198,34 @@
   }
 
   $("#submit").on("click", function() {
-    function validateForm() {
-      var isValid = true;
-//      swal("Double Check Time", "For the most accurate results all questionnaire questions must be answered", "Error" );
+    function formValidCheck() {
+      var valid = true;
       $('.form-control').each(function() {
         if ($(this).val() === '')
-          isValid = false;
+          valid = false;
       });
+
       $('.user-selects').each(function() {
         if ($(this).val() === "")
-          isValid = false
-      })
-      return isValid;
+          valid= false
+      });
+      return valid;
     }
     // If all required fields are filled
-    if (validateForm() == true) {
-      // Create an object for the user's data
-      var userResponse = {
+    if (formValidCheck() == true) {
+      // Create an object for the user's data and add to Friends List
+      var addUserToFriends = {
         name: $("#name").val(),
         photo: $("#photo").val(),
         scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(),]
       }
-      // Grab the URL of the website
+      // Grab the Current URL of the website
       var currentURL = window.location.origin;
       // AJAX post the data to the friends API.
-      $.post(currentURL + "/api/friends", userResponse, function(data) {
+      $.post(currentURL + "/api/friends", addUserToFriends, function(data) {
         // Grab the result from the AJAX post so that the best match's name and photo are displayed.
         $("#matchName").text(data.name);
-        $('#matchImg').attr("src", data.photo);
+        $('#theRevealImg').attr("src", data.photo);
         // Show the modal with the best match
         $("#resultsModal").modal('toggle');
       })

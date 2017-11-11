@@ -30,8 +30,6 @@ module.exports = function(app){
     var totalDifference = 0;
 
     for  (var i = 0; i < friends.length; i++) {
-
-      console.log(friends[i].name);
       totalDifference = 0;
 
       for (var j = 0; j< friends[i].scores[j]; j++){
@@ -41,8 +39,6 @@ module.exports = function(app){
         totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
 
         if (totalDifference <= perfectFit.finalPiece){
-
-          // Reset the perfectFit to be the new friend.
           perfectFit.name = friends[i].name;
           perfectFit.photo = friends[i].photo;
           perfectFit.finalPiece = totalDifference;
