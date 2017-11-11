@@ -14,8 +14,8 @@ module.exports = function(app){
     var perfectFit = {
       name: "",
       photo: "",
-      // Logic 10 questions, 10 friends = 10 * 10
-      finalPiece: 1000
+      // Logic 10 questions, 7 friends = 7 * 10 * 10
+      finalPiece: 700
     };
 
     var userInput = req.body;
