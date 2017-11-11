@@ -50,6 +50,16 @@ hr {
     margin: 1.2em 0;
 }
 
+a {
+    font-size: 14px;
+    color:#000 ;
+    -1px -1px 0 #d34753,
+    1px -1px 0 #d34753,
+    -1px 1px 0 #d34753,
+    1px 1px 0 #d34753,
+}
+
+
 resultsModal img {
     overflow: hidden;
     max-width: 550px;
