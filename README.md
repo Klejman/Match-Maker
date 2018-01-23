@@ -34,5 +34,3 @@ The formidable form element was tamed with the select enhancer `Chosen`
 StackOver Flow's article
 * https://stackoverflow.com/questions/15468640/when-is-this-json-structure-getting-converted-to-all-strings
 
-My desire to inform the user while still considering the UI and by extension the users experience I came across `Sweetheart`
-*  https://sweetalert.js.org/guides/
