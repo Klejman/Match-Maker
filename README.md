@@ -1,4 +1,6 @@
-<h1>FriendFinderApp
+# Match Maker Application :hearts:
+
+ https://find-friends-km.herokuapp.com/
 
 1. The app has a survey more of a questionnaire really that asks the user 10 questions. The users answer is based on the Likert Scale (scale of 1 to 5) based on how much the user agrees or disagrees with a question.
 
@@ -22,10 +24,6 @@
 
 7. Once the patent pending algorithm has had a chance to run the current user's most compatible match up friend, will be displayed in a modal pop-up.
    * The modal displays both the name and picture of the perfect fit or friend match.
-
-# <h4> Heroku App
-Check out my App on Heroku
-* https://find-friends-km.herokuapp.com/
 
 # <h4>Resources
 The formidable form element was tamed with the select enhancer `Chosen`
