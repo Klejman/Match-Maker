@@ -1,4 +1,4 @@
-# <h1>FriendFinderApp
+<h1>FriendFinderApp
 
 1. The app has a survey more of a questionnaire really that asks the user 10 questions. The users answer is based on the Likert Scale (scale of 1 to 5) based on how much the user agrees or disagrees with a question.
 
